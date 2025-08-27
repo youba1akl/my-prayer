@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+body {
+    background: linear-gradient(135deg, #2868c7, #0a2c61);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+
+/* container start */
+.container{
+    background: rgba(255, 255, 255, 0.1);
+    border:1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1) inset,
+                0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    max-width: 90%;
+    animation: fadeIn 1s ease-in-out;
+}
+.container h1{
+    animation: fadeIn 1s ease-in-out;
+}
+/* container end */
+
+/* city input start */
+.city-input{
+    width: 100%;
+    height: 70px;
+    padding: 5px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    margin: 20px 0;
+    background: rgba(255, 255, 255, 0.1);
+    border:1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
+}
+#ville{
+    position: relative;
+    background: transparent;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 7px;
+    font-size: 18px;
+    cursor: pointer;
+}
+option{
+    color: #000;
+}
+/* city input end */
+
+/* date start */
+.date-navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1.5px solid rgba(255, 255, 255, 0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+#date {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+button {
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: hsla(0, 0%, 87%, 0.5);
+}
+/* date end */
+
+/* prayer times start */
+.prayer-times{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    animation: fadeIn 1s ease-in-out;
+    padding: 10px;
+}
+.prayer-cont{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* prayer times end */
+
+/* animation start */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* animation end */

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>salati</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fa-solid fa-mosque"></i> My Prayer</h1>
+        <div class="city-input">
+            <select id="ville">
+                <option value="Béjaïa">Béjaïa</option>
+                <option value="Adrar">Adrar</option>
+                <option value="Chlef">Chlef</option>
+                <option value="Laghouat">Laghouat</option>
+                <option value="Oum El Bouaghi">Oum El Bouaghi</option>
+                <option value="Batna">Batna</option>
+                <option value="Biskra">Biskra</option>
+                <option value="Béchar">Béchar</option>
+                <option value="Blida">Blida</option>
+                <option value="Bouira">Bouira</option>
+                <option value="Tamanrasset">Tamanrasset</option>
+                <option value="Tébessa">Tébessa</option>
+                <option value="Tlemcen">Tlemcen</option>
+                <option value="Tiaret">Tiaret</option>
+                <option value="Tizi Ouzou">Tizi Ouzou</option>
+                <option value="Alger">Alger</option>
+                <option value="Djelfa">Djelfa</option>
+                <option value="Jijel">Jijel</option>
+                <option value="Sétif">Sétif</option>
+                <option value="Saïda">Saïda</option>
+                <option value="Skikda">Skikda</option>
+                <option value="Sidi Bel Abbès">Sidi Bel Abbès</option>
+                <option value="Annaba">Annaba</option>
+                <option value="Guelma">Guelma</option>
+                <option value="Constantine">Constantine</option>
+            </select>
+        </div>
+        <div class="date-navigation">
+            <button onclick="prevDay()">&LeftAngleBracket;</button>
+            <div class="date" id="month-year">
+                <div class="date" id="day"></div>
+                <div class="date" id="date"><span id="Dd"></span> <span id="Mm"></span> <span id="Yy"></span></div>
+            </div> 
+            <button onclick="nextDay()">&RightAngleBracket;</button>
+        </div>
+        <div class="prayer-times">
+            <div class="prayer-cont">
+                <span>Fajr</span>
+                <span id="fajr-time"></span>
+            </div>
+            <div class="prayer-cont">
+                <span>shorouq</span>
+                <span id="shorouq-time"></span>
+            </div>
+            <div class="prayer-cont">
+                <span>Dhuhr</span>
+                <span id="dhuhr-time"></span>
+            </div>
+            <div class="prayer-cont">
+                <span>Asr</span>
+                <span id="asr-time"></span>
+            </div>
+            <div class="prayer-cont">
+                <span>Maghrib</span>
+                <span id="maghrib-time"></span>
+            </div>
+            <div class="prayer-cont">
+                <span>Isha</span>
+                <span id="isha-time"></span>
+            </div>
+    </div>
+
+    <script src="function.js"></script>
+</body>
+</html>
